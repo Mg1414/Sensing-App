@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-
+import 'guide_screen.dart';
+import 'home.dart';
 List<CameraDescription> cameras = [];
 
 Future<void> main() async {
@@ -70,33 +71,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home'),
-      ),
-      body: Center(
-        child: Text('Home..'),
-      ),
-    );
-  }
-}
 
-class GuideScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Guide'),
-      ),
-      body: Center(
-        child: Text('Guide'),
-      ),
-    );
-  }
-}
 
 class CreateScreen extends StatelessWidget {
   @override
@@ -171,3 +146,5 @@ class _CameraScreenState extends State<CameraScreen> {
     );
   }
 }
+
+
